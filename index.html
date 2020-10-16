@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--shrink-to-fit=no only Bootsrapt has, its + to html-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <title>Document</title>
+    <!--Google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- link from getbootstap.com to CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!--Navbar   , make sure that CSS LINK ITS UP, AND JS link is down-->
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top"><!--put img in navbar/sticky-top: the top stays fixed-->
+          <nav class="navbar navbar-light">
+            <a class="navbar-brand" href="index.html"><!--i click on logo comes back to home-->
+              <img src="img/logo-dans-meat-yogurt.svg" width="auto" height="70" alt="Dans company logo" loading="lazy">
+            </a>
+          </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!--BUTTON DROPDOWN-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--ml/margin left/put manin menu in left side./ float-right:dorpdown menu gonna drop in right side -->
+          <ul class="navbar-nav ml-auto float-right">
+
+            <li class="nav-item dropdown btn btn-outline-light mr-4" style="width:120px;">
+              <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Flavours</a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Ham</a>
+                <a class="dropdown-item" href="#">Beef</a>
+                <a class="dropdown-item" href="#">Chicken</a>
+                <a class="dropdown-item" href="#">Fish</a>
+
+              </div>
+            </li>
+            <!--BUTTON NORMAL-->
+            <li class="nav-item btn btn-outline-light" style="width:120px;">
+              <a class="nav-link text-white" href="#">Contact</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+
+      <!--Jumbotron-->
+
+      <div class="jumbotron">
+        <!--I can overwrite it size: display-3/text,change color to white:text-white,-->
+        <div class="row">
+            <div class=" col-12 col-md-7 text-center text-md-left">
+              <!--col-12 col-md-7  /12 colum in all.md-/tablet size/ has to get smaller./ --text-center for small, it will in md: text-md-left-->
+              <h1 class="display-3 text-white drop-shadow">Thick & Creamy</h1>
+              <p class="lead">With real meat chunks
+              </p>
+              <!--<hr class="my-3"> my-margin:bootom&top/hr:szakasz csik-->
+            
+              <a class="btn btn-outline-light btn-lg mt-4 px-5 py-3 mb-5 mb-md-0" href="#" role="button">Pricing</a>
+              <!--mt-4:margin-top 4 down,px-5:padding-left-right, py-3:paddig-top-bottom
+              mb-md-0>margin-bottom-medium-0 effect -->
+            </div>
+
+            <div class="col-12 col-md-5">
+              <!--img-fluid:makes img smaller-->
+              <img src="img/hero1.png" alt="Dans yogurt product" class="img-fluid">
+            </div>
+        </div>
+      </div>
+    
+      <!--Founders Message-->
+      <div class="row">
+        <div class="col-12 col-md-4 img-fluid" >
+          <img src="img/headshot-dan.jpg" class="img-fluid rounded-left border-lg border-0" alt="Dans-yougortface barand">
+        </div>
+        <div class="col-12 col-md-8 bg-white p-5 d-flex align-items-center border border-dark rounded-right border-lg">
+          <section>
+            <h2>Message for our Founder</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quod labore! Ipsam explicabo in sed facere commodi, quidem repudiandae sunt fugit beatae dignissimos pariatur, illo culpa, nam vitae hic maxime quas ut impedit obcaecati. Amet reprehenderit ex reiciendis pariatur similique adipisci quam voluptate, tenetur voluptas laudantium ducimus expedita. Voluptatum alias recusandae, omnis impedit unde harum neque voluptatem explicabo cum mollitia.</p>
+          </section>
+        </div>
+      </div>
+
+    
+      <!--Carousel-->
+      <div id="carouselExampleControls" class="carousel slide d-none d-md-block carousel-fade" data-ride="carousel">
+        <div class="carousel-inner"> <!--d-none d-md-block:its dissapere when its sm size, and appare when its md.carousel-fade:slides shows in nicer way-->
+          <div class="carousel-item active" data-interval="500"> <!--data-iterval:timeing-->
+            <img src="img/yogurt-1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-interval="500">
+            <img src="img/yogurt-2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-interval="500">
+            <img src="img/yogurt-3.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+      <!--Cards-->
+          <div class="card-deck my-5">
+
+            <div class="card shadow" style="width: 18rem;">
+                  <img src="img/product1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://getbootstrap.com" class="btn btn-primary stretched-link">Go somewhere</a>
+              </div>
+            </div>
+      
+            <div class="card shadow" style="width: 18rem;">
+              <img src="img/product2.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://getbootstrap.com" class="btn btn-primary stretched-link">Go somewhere</a>
+              </div> <!--stretched-link: i can clik anywhere on pics , its gonna go to the side-->
+            </div>
+      
+            <div class="card shadow" style="width: 18rem;">
+              <img src="img/product3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="https://getbootstrap.com" class="btn btn-primary stretched-link">Go somewhere</a>
+              </div>
+            </div>
+      
+          </div>
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- link from getbootstap.com to JavaScript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
